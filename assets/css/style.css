@@ -54,6 +54,7 @@ header .content-wrapper .left{
 }
 header .content-wrapper .left .logo-wrapper{
   margin: 0 120px 0 25px;
+  margin-left: 0;
 }
 header .content-wrapper .left .logo-wrapper h1{
   font-size: 18px;
@@ -106,9 +107,6 @@ header .content-wrapper .left .menu-wrapper ul li:hover a::after{
 }
 header .right ul li form{
   position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
   transition: all 1s;
   width: 45px;
   height: 45px;
@@ -185,11 +183,31 @@ header .right ul{
   align-items: center;
 }
 header .right ul li{
-  /* width: 65px; */
-  padding: 20px 5px;
   min-height: 100%;
   display: inline-block;
   transition: 0.3s;
+}
+header .right ul li+ li{
+  padding: 24px 20px;
+}
+header .right ul li:first-child{
+  padding: 9px 15px;
+}
+header .right ul li:first-child:hover{
+  background: transparent;
+}
+header .right ul li:last-child{
+  background-color: transparent;
+  padding: 5px;
+}
+header .right ul li:last-child:hover{
+  background: transparent;
+}
+header .right ul li:last-child a .text{
+  font-size: 13px;
+  font-weight: 500;
+  color: #6C7293;
+  margin-right: 5px;
 }
 header .right ul li:hover{
   background: #BDBBCE;
@@ -199,7 +217,9 @@ header .right ul li a{
   align-items: center;
   color: #6E6C85;
 }
-
+header .right ul li:hover a{
+  color: #fff;
+}
 header .right ul li a i {
   display: inline-block;
   font-size: 19px;
