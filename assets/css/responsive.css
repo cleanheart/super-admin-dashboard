@@ -1,0 +1,26 @@
+@media(max-width:991.90px){
+  header .left .menu-wrapper{
+    display: none;
+  }
+  header .content-wrapper .left .logo-wrapper {
+    margin: 0;
+  }
+}
+@media(max-width:774.90px){
+  header .right ul li+ li{
+    display: none;
+  }
+  header .right ul li:last-child{
+    display: inline-block;
+  }
+
+}
+@media(max-width:665px){
+  
+  header .right ul li:first-child {
+    display: none;
+  }
+  header .right ul li:last-child {
+    padding: 15px 10px;
+  }
+}
