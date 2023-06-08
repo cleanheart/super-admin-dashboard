@@ -229,11 +229,16 @@ header .right ul li:last-child a .text{
 
 /*******Menu section Start hare*******/
 
-.menu-area{
-  padding-top: 25px;
+.menu-area .container{
+  padding: 0;
+}
+.menu-area .left{
   background: #282733;
   height: 100vh;
   width: 251px;
+}
+.menu-area .content-wrapper{
+  display: flex;
 }
 .menu-area ul{
   display: flex;
@@ -243,7 +248,7 @@ header .right ul li:last-child a .text{
   width: 100%;
   padding: 5px 10px;
   background: red;
-  padding-left: 25px;
+  padding-left: 10px;
   margin-bottom: 25px;
   position: relative;
 }
@@ -263,7 +268,7 @@ header .right ul li:last-child a .text{
   width: 100%; 
   padding: 5px 10px;
   position: relative;
-  padding-left: 25px;
+  padding-left: 10px;
   transition: 0.3s;
 }
 
@@ -276,7 +281,14 @@ header .right ul li:last-child a .text{
   font-size: 15px;
   content: "\f061";
   color: #B6B9C8;
-
+  top:50%;
+  left: 197px;
+  transform: translateY(-50%);
+  transition: 0.3s;
+  display: none;
+}
+.menu-area ul li+ li:hover::before{
+  display: inline-block;
 }
 
 .menu-area ul li+ li::after{
@@ -317,6 +329,56 @@ header .right ul li:last-child a .text{
   font-size: 13px;
   margin-left: 15px;
 }
+.menu-area .right .content-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-area .right .content-wrapper .inner{
+  padding: 15px 20px;
+}
+.menu-area .right .content-wrapper .inner+ .inner{
+  margin-left: 7px;
+}
+.menu-area .right .content-wrapper .inner:first-child{
+  background:#F64E60 url(../Media/hero-bg-1.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+.menu-area .right .content-wrapper .inner-2{
+  background:#6993FF url(../Media/hero-bg-2.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+.menu-area .right .content-wrapper .inner-3{
+  background:#F64E60 url(../Media/hero-bg-1.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+.menu-area .right .content-wrapper .inner-4{
+  background:#1BC5BD url(../Media/hero-bg-4.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+.menu-area .right .content-wrapper .inner .title-wrapper .title{
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+.menu-area .right .content-wrapper .inner .title-wrapper .description{
+  font-size: 12px;
+  color: #fff;
+  font-weight: 400;
+}
+.menu-area .right .content-wrapper .inner .icon-wrapper{
+  font-size: 25px;
+  color: #fff;
+}
 
 /*******Menu section End hare*******/
+
+/*********Hero Section Start Hare********/
+
+/*********Hero Section End Hare********/
 
