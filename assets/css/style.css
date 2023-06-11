@@ -336,6 +336,11 @@ header .right ul li:last-child a .text{
 }
 .menu-area .right .content-wrapper .inner{
   padding: 15px 20px;
+  transition: 0.3s;
+  width: 100%;
+}
+.menu-area .right .content-wrapper .inner:hover{
+  cursor: pointer;
 }
 .menu-area .right .content-wrapper .inner+ .inner{
   margin-left: 7px;
@@ -380,5 +385,9 @@ header .right ul li:last-child a .text{
 
 /*********Hero Section Start Hare********/
 
+.hero-area{
+  position: absolute;
+  left: 30%;
+  top: 30%;
+}
 /*********Hero Section End Hare********/
-
