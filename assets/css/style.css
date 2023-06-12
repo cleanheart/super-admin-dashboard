@@ -390,4 +390,21 @@ header .right ul li:last-child a .text{
   left: 30%;
   top: 30%;
 }
+.hero-area .content-wrapper{
+  display: flex;
+}
+.hero-area .content-wrapper .left{
+  display: flex;
+  flex-direction: column;
+}
+.hero-area .content-wrapper .left .top{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-area table th, tr, td{
+  border: 1px solid;
+}
+
 /*********Hero Section End Hare********/
