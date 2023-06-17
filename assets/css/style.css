@@ -4,6 +4,7 @@ body{
   padding: 0;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
+  background: #EBEDF2;
 }
 :root {
 	--bg: #e3e4e8;
@@ -331,26 +332,29 @@ header .right ul li:last-child a .text{
 }
 .menu-area .right .content-wrapper{
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
 }
-.menu-area .right .content-wrapper .inner{
+.menu-area .right .content-wrapper .hero-box-area{
+  display: flex;
+
+}
+.menu-area .right .content-wrapper .hero-box-area .inner{
   padding: 15px 20px;
   transition: 0.3s;
   width: 100%;
 }
-.menu-area .right .content-wrapper .inner:hover{
+.menu-area .right .content-wrapper .hero-box-area .inner:hover{
   cursor: pointer;
 }
-.menu-area .right .content-wrapper .inner+ .inner{
+.menu-area .right .content-wrapper .hero-box-area .inner+ .inner{
   margin-left: 7px;
 }
-.menu-area .right .content-wrapper .inner:first-child{
+.menu-area .right .content-wrapper .hero-box-area .inner:first-child{
   background:#F64E60 url(../Media/hero-bg-1.png);
   background-repeat: no-repeat;
   background-position: top right;
 }
-.menu-area .right .content-wrapper .inner-2{
+.menu-area .right .content-wrapper .hero-box-area .inner-2{
   background:#6993FF url(../Media/hero-bg-2.png);
   background-repeat: no-repeat;
   background-position: top right;
@@ -380,12 +384,68 @@ header .right ul li:last-child a .text{
   font-size: 25px;
   color: #fff;
 }
+.menu-area .right .content-wrapper .table-pie-chart{
+  display: flex;
+  align-items: center;
+}
 
-/*******Menu section End hare*******/
+
+/*******Table area Start hare*******/
+
+
+
+
+
+
+#chart, #chartData {
+  background: #ebedf2 url("images/gradient.png") repeat-x 0 0;
+}
+
+#chart {
+  display: block;
+  margin: 0 0 50px 0;
+  float: left;
+  cursor: pointer;
+}
+
+#chartData {
+  width: 200px;
+  margin: 0 40px 0 0;
+  float: right;
+  border-collapse: collapse;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  background-position: 0 -100px;
+}
+
+#chartData th, #chartData td {
+  padding: 0.5em;
+  border: 1px dotted #666;
+  text-align: left;
+}
+
+#chartData th {
+  border-bottom: 2px solid #333;
+  text-transform: uppercase;
+}
+
+#chartData td {
+  cursor: pointer;
+}
+
+#chartData td.highlight {
+  background: #e8e8e8;
+}
+
+#chartData tr:hover td {
+  background: #f0f0f0;
+}
+/*******pie chart Start hare*******/
 
 /*********Hero Section Start Hare********/
 
-.hero-area{
+/* .hero-area{
   position: absolute;
   left: 30%;
   top: 30%;
@@ -405,6 +465,6 @@ header .right ul li:last-child a .text{
 }
 .hero-area table th, tr, td{
   border: 1px solid;
-}
+} */
 
 /*********Hero Section End Hare********/

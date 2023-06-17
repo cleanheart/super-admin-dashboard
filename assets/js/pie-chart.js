@@ -1,7 +1,5 @@
 $(function(){
-
-  // Run the code when the DOM is ready
-$( pieChart );
+  $( pieChart );
 
 function pieChart() {
 
@@ -363,7 +361,4 @@ function pieChart() {
   }
 
 };
-
-
-});
-
+})
