@@ -384,18 +384,72 @@ header .right ul li:last-child a .text{
   font-size: 25px;
   color: #fff;
 }
-.menu-area .right .content-wrapper .table-pie-chart{
-  display: flex;
-  align-items: center;
-}
+
 
 
 /*******Table area Start hare*******/
+.menu-area .right .content-wrapper .table-pie-chart{
+  display: flex;
+  /* align-items: center; */
+}
+.menu-area .right .content-wrapper .table-pie-chart .top{
+  display: flex;
+  padding: 15px 5px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: -3px 0px 15px 8px rgba(255,255,255,0.75);
+  text-transform: capitalize;
+}
+.menu-area .right .content-wrapper .table-pie-chart .top .title h5{
+  font-weight: 700;
+  color: #000;
+}
+.menu-area .right .content-wrapper .table-pie-chart .top form select{
+  text-transform: capitalize;
+  font-size: 13px;
+  padding: 10px;
+  border-radius: 20px;
+
+}
+.menu-area .right .content-wrapper .table-pie-chart .bottom-area table th{
+  text-transform: capitalize;
+  font-size: 12px;
+  text-align: center;
+}
+.menu-area .right .content-wrapper .table-pie-chart .bottom-area table td{
+  font-size: 10px;
+  width: 150px;
+  text-align: center;
+}
+.menu-area .right .content-wrapper .table-pie-chart .bottom-area table td:first-child{
+  width: 270px;
+  text-align: start;
+}
+.menu-area .right .content-wrapper .table-pie-chart .bottom-area table .title h5{
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin: 0;
+}
+.menu-area .right .content-wrapper .table-pie-chart .bottom-area table td .total{
+  text-transform: capitalize;
+  color: #918787;
+}
 
 
 
 
 
+.menu-area .right .content-wrapper .table-pie-chart .bottom-area table th, tr, td{
+  border: 1px solid;
+}
+
+
+
+
+
+
+/*******Pie Chart area Start hare*******/
 
 #chart, #chartData {
   background: #ebedf2 url("images/gradient.png") repeat-x 0 0;
@@ -403,14 +457,12 @@ header .right ul li:last-child a .text{
 
 #chart {
   display: block;
-  margin: 0 0 50px 0;
   float: left;
   cursor: pointer;
 }
 
 #chartData {
   width: 200px;
-  margin: 0 40px 0 0;
   float: right;
   border-collapse: collapse;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
