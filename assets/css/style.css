@@ -8,6 +8,7 @@ body{
 }
 :root {
 	--bg: #e3e4e8;
+  --background:#EBEDF2;
 	--fg: #17181c;
 	--input: #ffffff;
 	--primary: #255ff4;
@@ -394,10 +395,11 @@ header .right ul li:last-child a .text{
 }
 .menu-area .right .content-wrapper .table-pie-chart .top{
   display: flex;
+  background-color: #fff;
   padding: 15px 5px;
   align-items: center;
   justify-content: space-between;
-  box-shadow: -3px 0px 15px 8px rgba(255,255,255,0.75);
+  box-shadow: 5px 0px 15px 8px rgba(255,255,255,0.75);
   text-transform: capitalize;
 }
 .menu-area .right .content-wrapper .table-pie-chart .top .title h5{
@@ -411,38 +413,114 @@ header .right ul li:last-child a .text{
   border-radius: 20px;
 
 }
+
+
+.menu-area .right .content-wrapper .table-pie-chart .bottom-area table{
+  background: #fff;
+  /* box-shadow: 5px 0px 15px 8px rgba(255,255,255,0.75); */
+}
 .menu-area .right .content-wrapper .table-pie-chart .bottom-area table th{
   text-transform: capitalize;
   font-size: 12px;
   text-align: center;
+  font-weight: 600;
+  /* margin-bottom: 10px; */
+  padding: 10px 1px;
 }
-.menu-area .right .content-wrapper .table-pie-chart .bottom-area table td{
-  font-size: 10px;
-  width: 150px;
-  text-align: center;
+.menu-area .right .content-wrapper .table-pie-chart .bottom-area table tr td{
+  border: 5px solid #fff;
+  background: var(--background);
 }
 .menu-area .right .content-wrapper .table-pie-chart .bottom-area table td:first-child{
-  width: 270px;
+  width: 250px;
   text-align: start;
+  padding: 7px 1px;
+  background: #fff;
+  letter-spacing: -1px;
 }
 .menu-area .right .content-wrapper .table-pie-chart .bottom-area table .title h5{
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 12px;
+  font-weight: 600;
   text-transform: capitalize;
   margin: 0;
 }
 .menu-area .right .content-wrapper .table-pie-chart .bottom-area table td .total{
   text-transform: capitalize;
   color: #918787;
+  font-size: 11px;
+}
+.menu-area .right .content-wrapper .table-pie-chart .bottom-area table tr:nth-child(2) td:nth-child(2){
+  background: rgb(15, 226, 7, 0.5);
+}
+.menu-area .right .content-wrapper .table-pie-chart .bottom-area table tr:nth-child(2) td:nth-child(3){
+  background: rgb(15, 226, 7);
+}
+.menu-area .right .content-wrapper .table-pie-chart .bottom-area table tr:nth-child(3) td:nth-child(2){
+  background: rgb(15, 223, 160, 0.5);
+}
+.menu-area .right .content-wrapper .table-pie-chart .bottom-area table tr:nth-child(3) td:nth-child(3){
+  background: rgb(15, 223, 160, 0.5);
+}
+.menu-area .right .content-wrapper .table-pie-chart .bottom-area table tr:nth-child(3) td:nth-child(4){
+  background: rgb(15, 223, 160);
+}
+.menu-area .right .content-wrapper .table-pie-chart .bottom-area table tr:nth-child(4) td:nth-child(2){
+  background: rgb(23, 91, 236, 0.5);
+}
+.menu-area .right .content-wrapper .table-pie-chart .bottom-area table tr:nth-child(4) td:nth-child(3){
+  background: rgb(23, 91, 236, 0.5);
+}
+.menu-area .right .content-wrapper .table-pie-chart .bottom-area table tr:nth-child(4) td:nth-child(4){
+  background: rgb(23, 91, 236, 0.5);
+}
+.menu-area .right .content-wrapper .table-pie-chart .bottom-area table tr:nth-child(4) td:nth-child(5){
+  background: rgb(23, 91, 236);
+}
+.menu-area .right .content-wrapper .table-pie-chart .bottom-area table tr:nth-child(5) td:nth-child(2){
+  background: rgb(184, 247, 12, 0.5);
+}
+.menu-area .right .content-wrapper .table-pie-chart .bottom-area table tr:nth-child(5) td:nth-child(3){
+  background: rgb(184, 247, 12, 0.5);
+}
+.menu-area .right .content-wrapper .table-pie-chart .bottom-area table tr:nth-child(5) td:nth-child(4){
+  background: rgb(184, 247, 12, 0.5);
+}
+.menu-area .right .content-wrapper .table-pie-chart .bottom-area table tr:nth-child(5) td:nth-child(5){
+  background: rgb(184, 247, 12, 0.5);
+}
+.menu-area .right .content-wrapper .table-pie-chart .bottom-area table tr:nth-child(5) td:nth-child(6){
+  background: rgb(184, 247, 12);
+}
+.menu-area .right .content-wrapper .table-pie-chart .bottom-area table tr:nth-child(6) td:nth-child(2){
+  background: rgb(220, 12, 247, 0.5);
+}
+.menu-area .right .content-wrapper .table-pie-chart .bottom-area table tr:nth-child(6) td:nth-child(3){
+  background: rgb(220, 12, 247, 0.5);
+
+}
+.menu-area .right .content-wrapper .table-pie-chart .bottom-area table tr:nth-child(6) td:nth-child(4){
+  background: rgb(220, 12, 247);
+}
+.menu-area .right .content-wrapper .table-pie-chart .bottom-area table tr:nth-child(7) td:nth-child(2){
+  background: rgb(236, 8, 168);
+}
+
+.menu-area .right .content-wrapper .table-pie-chart .bottom-area table tr td{
+  font-size: 13px;
+  width: 150px;
+  text-align: center;
 }
 
 
 
 
 
-.menu-area .right .content-wrapper .table-pie-chart .bottom-area table th, tr, td{
+
+
+
+/* .menu-area .right .content-wrapper .table-pie-chart .bottom-area table th, tr, td{
   border: 1px solid;
-}
+} */
 
 
 
